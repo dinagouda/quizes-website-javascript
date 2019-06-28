@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MY Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" media="screen" href="bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="quizes.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="profile.css" />
+    <!-- <link href="  https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+</head>
+
+<body>
+    <div class="container-fluid nav_fluid">
+            <div class="container">
+                <nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-primary">
+                    <a class="navbar-brand" href="quizes.html"><img id="logo" src="images/quiz.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active home">
+                                <a class="nav-link" href="quizes.html">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li id="nav_quiz_btn" class="nav-item active" style="display: none">
+                                <a class="nav-link" href="quizes_page.html">Quizes<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li id="nav_login_btn" class="nav-item login active">
+                                <a class="nav-link" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="#">login<span class="sr-only">(current)</span></a>
+                            </li>
+                            <span id="vl"></span>
+                            <li id="nav_signup_btn" class="nav-item sign_up active">
+                                <a class="nav-link" href="signup.html">Sign Up<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li id="profile_btn" style="display: none" class="nav-item sign_up active">
+                                <a class="nav-link" href="profile.html"><span id="profile_name">profile</span><span class="sr-only">(current)</span></a>
+                            </li>
+                            <li id="bas" class="nav-item three_dot btn three_dot_menu dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="dropdown">
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a id="sign_out" class="dropdown-item" href="#">Sign Out</a>
+                                        <a id="create_quiz_btn" class="dropdown-item" href="quizes_page.html">Create Quiz</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div> 
+
+    <ul id="grades_text_ul">
+        <li id='aa'>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>F</li>
+    </ul>
+    <ul id="grades_colors_ul">
+        <li id="col-a">A</li>
+        <li id="col-b">B</li>
+        <li id="col-c">C</li>
+        <li id="col-d">D</li>
+        <li id="col-f">F</li>
+    </ul>
+    <div class="container mycontiner">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-6 mycont ">
+                <!-- <div class="text-center">
+
+                    <img src="images/profile.png" class="rounded-circle img-fluid" id="userpic" alt="Cinque Terre"
+                        width="304" height="236">
+                </div> -->
+                <!-- <div ><img src="img/profile.png" alt="user pic"  class="picuser"/></div> -->
+
+                <div id="name" class="profile_items"> 
+                    <i class="fas fa-user"></i> 
+                    <span>Aya Emad Yousef</span> 
+                </div>
+                <div id="email" class="profile_items">
+                    <i class="fas fa-envelope-square"></i>
+                    <span>Ayaemad@gmail.com</span> 
+                </div>
+                <div id="grade" class="profile_items"> 
+                    <i class="fas fa-graduation-cap"></i> 
+                    <span>total grade : B</span>  
+                </div>
+                <p class="text-center">
+                    <a class="btn btn-primary " id="collapsediv" data-toggle="collapse" href="#collapseExample"
+                        role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Your Courses
+                    </a>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            <ul id="grade_list_group" class="list-group">
+                            </ul>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer">
+        <div class="container">
+            <hr>
+            <div class="row justify-content-center copy_rights">
+                <i class="far fa-copyright"></i><span> all rights reserved</span> <span id="developed_by"></span> <span>developed by our awesome team</span>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.3.1.slim.min.js"></script>
+    <script src="bootstrap.js" type="text/javascript"></script>
+    <script src="quizes.js" type="text/javascript"></script>
+    <script src="profile.js" type="text/javascript"></script>
+</body>
+
+</html>

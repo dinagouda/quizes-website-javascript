@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>WEBSITE</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="quiz.css" rel="stylesheet">
+    <script src="jquery-3.3.1.slim.min.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="quizes.js"></script>
+    <script src="quiz.js"></script>
+
+
+    
+
+</head>
+
+<body>
+
+  <div class="container-fluid nav_fluid">
+    <div class="container">
+        <nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-primary">
+            <a class="navbar-brand" href="quizes.html"><img id="logo" src="images/quiz.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active home">
+                        <a class="nav-link" href="quizes.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li id="nav_quiz_btn" class="nav-item active" style="display: none">
+                        <a class="nav-link" href="quizes_page.html">Quizes<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li id="nav_login_btn" class="nav-item login active">
+                        <a class="nav-link" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="#">login<span class="sr-only">(current)</span></a>
+                    </li>
+                    <span id="vl"></span>
+                    <li id="nav_signup_btn" class="nav-item sign_up active">
+                        <a class="nav-link" href="signup.html">Sign Up<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li id="profile_btn" style="display: none" class="nav-item sign_up active">
+                        <a class="nav-link" href="profile.html"><span id="profile_name">profile</span><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li id="bas" class="nav-item three_dot btn three_dot_menu dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown">
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a id="sign_out" class="dropdown-item" href="#">Sign Out</a>
+                                <a id="create_quiz_btn" class="dropdown-item" href="quizes_page.html">Create Quiz</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div> 
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<p id="timer"></p>
+
+<div class="container">
+  <br/>
+  <br/>
+<div class="row justify-content-between justify-content-lg-center">
+  <div class="col-1 ">
+      <img src="https://img.icons8.com/color/48/000000/1-circle-c.png">
+  </div>
+  <div class="col-10">
+      <p class="ques" id="ques1"> How many Bytes are stored by ‘Long’ Data type in C# .net?</p>
+      <form>
+              <div class="radio">
+                <input  type="radio" name="optradio" id="rad1"> <span class="sspp" id="ques11">8 </span>
+              </div>
+              <div class="radio">
+                <input  type="radio" name="optradio" id="rad2"> <span class="sspp" id="ques12">8 </span>
+              </div>
+              <div class="radio ">
+                <input  type="radio" name="optradio" id="rad3"> <span class="sspp" id="ques13">8 </span>
+              </div>
+            </form>
+      
+  </div>
+
+</div>
+
+<br/>
+<br/>
+
+
+<div class="row justify-content-between justify-content-lg-center">
+  <div class="col-1">
+      <img src="https://img.icons8.com/color/48/000000/2-circle-c.png">
+  </div>
+  <div class="col-10">
+      <p class="ques" id="ques2">Choose “.NET class” name from which data type “UInt” is derived ?</p>
+      <form>
+              <div class="radio">
+                <input  type="radio" name="optradio" id="rad4"> <span class="sspp" id="ques21">8 </span>
+              </div>
+              <div class="radio">
+                <input  type="radio" name="optradio" id="rad5"> <span class="sspp" id="ques22">8 </span>
+              </div>
+              <div class="radio ">
+                <input  type="radio" name="optradio" id="rad6"> <span class="sspp" id="ques23">8 </span>
+              </div>
+            </form>
+  </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="row justify-content-between justify-content-lg-center">
+  <div class="col-1">
+      <img src="https://img.icons8.com/color/50/000000/3-circle-c.png">
+  </div>
+  <div class="col-10">
+      <p class="ques" id="ques3">Correct Declaration of Values to variables ‘a’ and ‘b’?</p>
+      <form>
+              <div class="radio">
+                <input  type="radio" name="optradio" id="rad7" > <span class="sspp" id="ques31">8 </span>
+              </div>
+              <div class="radio">
+                <input  type="radio" name="optradio" id="rad8"> <span class="sspp" id="ques32">8 </span>
+              </div>
+              <div class="radio ">
+                <input  type="radio" name="optradio" id="rad9"> <span class="sspp" id="ques33">8 </span>
+              </div>
+            </form>
+  </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="row justify-content-between justify-content-lg-center">
+  <div class="col-1">
+          <img src="https://img.icons8.com/color/48/000000/4-circle-c.png">
+   </div>
+  <div class="col-10">
+      <p class="ques" id="ques4">Arrange the following data type in order of increasing magnitude sbyte, short, long, int.</p>
+      <form>
+              <div class="radio">
+                <input  type="radio" name="optradio" id="rad10" > <span class="sspp" id="ques41">8 </span>
+              </div>
+
+              <div class="radio">
+                <input  type="radio" name="optradio" id="rad11" > <span class="sspp" id="ques42">8 </span>
+              </div>
+              <div class="radio ">
+                <input  type="radio" name="optradio" id="rad12" > <span class="sspp" id="ques43">8 </span>
+              </div>
+            </form>
+      
+  </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="row justify-content-between justify-content-lg-center">
+  <div class="col-1">
+      <img src="https://img.icons8.com/color/48/000000/5-circle-c.png">
+  </div>
+  <div class="col-10">
+      <p class="ques" id="ques5">Which data type should be more preferred for storing a simple number like 35 to improve execution speed of a program?</p>
+      <form>
+              <div class="radio">
+                <input  type="radio" name="optradio" id="rad13"> <span class="sspp" id="ques51">8 </span>
+              </div>
+              <div class="radio">
+                <input  type="radio" name="optradio" id="rad14"> <span class="sspp" id="ques52">8 </span>
+              </div>
+              <div class="radio ">
+                <input  type="radio" name="optradio" id="rad15"> <span class="sspp" id="ques53">8 </span>
+              </div>
+            </form>
+  </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="row justify-content-between justify-content-lg-center" >
+  <div class="col-1">
+      <img src="https://img.icons8.com/color/48/000000/6-circle-c.png">
+  </div>
+  <div class="col-10">
+      <p class="ques" id="ques6">Correct way to assign values to variable ‘c’ when int a=12, float b=3.5,int c;</p>
+      <form>
+              <div class="radio">
+                <input  type="radio" name="optradio" id="rad16"> <span class="sspp" id="ques61">8 </span>
+              </div>
+              <div class="radio">
+                <input  type="radio" name="optradio" id="rad17"> <span class="sspp" id="ques62">8 </span>
+              </div>
+              <div class="radio ">
+                <input  type="radio" name="optradio" id="rad18"> <span class="sspp" id="ques63">8 </span>
+              </div>
+            </form>
+  </div>
+</div>
+
+<br/>
+<br/>
+
+
+<div class="row justify-content-between justify-content-lg-center">
+  <div class="col-1">
+      <img src="https://img.icons8.com/color/48/000000/7-circle-c.png">
+  </div>
+  <div class="col-10">
+      <p class="ques" id="ques7">Default Type of number without decimal is?</p>
+      <form>
+              <div class="radio">
+                <input  type="radio" name="optradio" id="rad19" > <span class="sspp" id="ques71">8 </span>
+              </div>
+              <div class="radio">
+                <input  type="radio" name="optradio" id="rad20"> <span class="sspp" id="ques72">8 </span>
+              </div>
+              <div class="radio ">
+                <input  type="radio" name="optradio" id="rad21"> <span class="sspp" id="ques73">8 </span>
+              </div>
+            </form>
+  </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="row justify-content-between justify-content-lg-center">
+  <div class="col-1">
+      <img src="https://img.icons8.com/color/48/000000/8-circle-c.png">
+  </div>
+  <div class="col-10">
+      <p class="ques" id="ques8"> Default Type of number without decimal is?</p>
+      <form>
+              <div class="radio">
+                <input  type="radio" name="optradio" id="rad22"> <span class="sspp" id="ques81">8 </span>
+              </div>
+              <div class="radio">
+                <input  type="radio" name="optradio" id="rad23"> <span class="sspp" id="ques82">8 </span>
+              </div>
+              <div class="radio ">
+                <input  type="radio" name="optradio" id="rad24" > <span class="sspp" id="ques83">8 </span>
+              </div>
+            </form>
+  </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="row justify-content-between justify-content-lg-center">
+  <div class="col-1" >
+      <img src="https://img.icons8.com/color/48/000000/9-circle-c.png">
+  </div>
+  <div class="col-10">
+      <p class="ques" id="ques9">Select a convenient declaration and initialization of a floating point number:</p>
+      <form>
+              <div class="radio">
+                <input  type="radio" name="optradio" id="rad25"> <span class="sspp" id="ques91">8 </span>
+              </div>
+              <div class="radio">
+                <input  type="radio" name="optradio" id="rad26" > <span class="sspp" id="ques92">8 </span>
+              </div>
+              <div class="radio ">
+                <input  type="radio" name="optradio" id="rad27"> <span class="sspp" id="ques93">8 </span>
+              </div>
+            </form>
+  </div>
+</div>
+
+<br/>
+<br/>
+
+<div class="row justify-content-between justify-content-lg-center">
+  <div class="col-1">
+       <img src="images/ten.svg" id="ten"> 
+  </div>
+  <div class="col-10">
+      <p class="ques" id="ques10">  Number of digits upto which precision value of float data type is valid ?</p>
+      <form>
+              <div class="radio">
+                <input  type="radio" name="optradio" id="rad28" > <span class="sspp" id="ques101">8 </span>
+              </div>
+              <div class="radio">
+                <input  type="radio" name="optradio" id="rad29" > <span class="sspp" id="ques102">8 </span>
+              </div>
+              <div class="radio ">
+                <input  type="radio" name="optradio" id="rad30" > <span class="sspp" id="ques103">8 </span>
+              </div>
+            </form>
+  </div>
+</div>
+
+
+
+</div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="row">
+    <button class="btn btn-primary" id="sub" type="submit">Finish</button>
+    </div>
+
+
+    <br/>
+    <br/>
+    <br/>
+    <div class="container-fluid footer">
+        <div class="container">
+            <hr>
+            <div class="row justify-content-center copy_rights">
+                <i class="far fa-copyright"></i><span> all rights reserved</span> <span id="developed_by"></span>
+                <span>developed by our awesome team</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+
+/*navbar section*/
+.navbar{
+    font-weight: bold;
+    font-size: 15pt;
+    padding: 10px 100px;
+}
+#vl{
+    border-left: 1px solid white;
+    height: 40px;
+    margin: 5px 10px 0px 10px;
+}
+.navbar .nav-item{
+    width: 100px;
+    transition: background-color 2s;
+    text-align: center;
+    border: 0px;
+    border-radius: 5px;
+    margin: 0px 5px;
+    font-family: "Black Han Sans";
+}
+.navbar .nav-item:hover{
+    background-color: rgb(53, 97, 143);
+    color: rgb(31, 26, 26);
+    border: 0px;
+    border-radius: 5px;
+}
+.navbar .navbar-brand #logo{
+    width: 70px;
+    height: 70px;
+}
+.navbar .nav-item.home{
+    margin-left: 700px;
+}
+
+@media only screen and (max-width: 1200px){
+    .navbar{
+        padding: 10px 40px;
+    }
+    .navbar .nav-item.home{
+        margin-left: 5px;
+    }
+    #vl{
+        display: none;
+    }
+}

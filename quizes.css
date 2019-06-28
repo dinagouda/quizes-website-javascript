@@ -1,0 +1,227 @@
+
+/*navbar section*/
+.navbar{
+    font-weight: bold;
+    font-size: 15pt;
+    padding: 10px 100px;
+}
+#vl{
+    border-left: 1px solid white;
+    height: 40px;
+    margin: 5px 10px 0px 10px;
+}
+.navbar .nav-item:not(.three_dot){
+    width: 100px;
+    transition: background-color 2s;
+    text-align: center;
+    border: 0px;
+    border-radius: 5px;
+    margin: 0px 5px;
+    font-family: "Black Han Sans";
+}
+.navbar .nav-item.three_dot{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+.navbar .nav-item:hover:not(.three_dot){
+    background-color: rgb(53, 97, 143);
+    color: rgb(31, 26, 26);
+    border: 0px;
+    border-radius: 5px;
+}
+.navbar .navbar-brand #logo{
+    width: 70px;
+    height: 70px;
+}
+.navbar .nav-item.home{
+    margin-left: 700px;
+}
+.bg-primary{
+    background-color: #298E9E !important;
+}
+.container-fluid.slider{
+    padding-left: 0px;
+    padding-right: 0px; 
+}
+.navbar-dark .navbar-nav .nav-link{
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1200px){
+    .navbar{
+        padding: 10px 40px;
+    }
+    .navbar .nav-item.home{
+        margin-left: 5px;
+    }
+    #vl{
+        display: none;
+    }
+}
+
+/*slider section*/
+.slider{
+    height: 600px;
+    margin-top: 100px;
+}
+.slider img{
+    height: 600px;
+}
+/*cards section*/
+.cards_section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgb(165, 165, 165);
+    /* background-image: url('images/bg.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed; */
+}
+.carousel-caption{
+    bottom: 0px;
+    left: 0px;
+    padding-top:200px; 
+    height: 100%;
+    width: 100%;
+    background-color: #003152;
+    opacity: .7;
+}
+.carousel-caption h5{
+    font-size: 25pt;
+    font-weight: bolder;
+}
+.carousel-caption p{
+    font-weight: bolder;
+}
+.cards_section .card{
+    height: 500px;
+    height: 300px;
+    margin-bottom: 10px;
+    background-color: white;
+    transition: box-shadow 1s;
+}
+.cards_section .card:hover{
+    box-shadow: 0px 0px 10px 5px rgb(184, 185, 185);
+}
+#card1{background-image: url('images/c_sharp.jpg');}
+#card2{background-image: url('images/html52.jpg');}
+#card3{background-image: url('images/js2.jpg');}
+#card4{background-image: url('images/sql.jpg');}
+
+.card_img{
+    width: 100%;
+    height: 200px;
+    background-size: 100% 100%;
+    transition: background-size 2s;
+}
+.card_img:hover{
+    background-size: 110% 110%;
+}
+.card-title{
+    font-family: 'Alfa Slab One';
+}
+.cards_section .btn.btn-primary{
+    font-weight: 600;
+    position: absolute;
+    top: 420px;
+}
+
+
+/*footer section*/
+.footer{
+    min-height: 300px;
+    background-color: #298E9E;
+}
+.footer hr{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+.footer img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    margin: 0px 0px 20px 0px;
+}
+.footer .col-12{
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    text-align: center;
+    color: white;
+    transition: box-shadow 1s;
+}
+.footer .col-12:hover{
+    box-shadow: 0px 0px 10px 2px rgb(53, 97, 143);
+}
+.footer i:not(.far){
+    font-size: 25pt;
+    margin: 0px 12px;
+    color: white
+}
+.far{
+    margin: 6px 0px;
+}
+
+.copy_rights{
+    min-height: 50px;
+    color: white;
+}
+.copy_rights span{
+    margin: 0px 10px;
+}
+#developed_by{
+    height: 30px;
+    border-left: 1px solid white;
+}
+
+
+/*popup form control*/
+form .form-group{
+
+}
+.modal-content{
+    /* width: 450px; */
+    height: 500px;
+}
+.modal-body button{
+    margin: 0px 40%; 
+}
+.modal-body #no_account{
+    text-align: center;
+}
+
+/* 3 dots styling */
+.dropdown-toggle::after{
+    border: 0px;
+    padding-left: 3px;
+    content: "\2807";
+    font-size: 23px;
+    color: white;
+}
+.dropdown-menu{
+    top: 43px;
+    left: -88px;
+    width: 130px;
+    min-width: 0px;
+}
+
+/* create quiz button */
+#create_p{
+    color: #298E9E;
+    font-size: 20pt;
+    font-weight: 800;
+    text-align: center;
+}
+#create_quiz_div{
+    width: 25%;
+    height: 130px;
+    margin: 10px auto;
+    background-image: url('images/add.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#create_quiz_div:hover{
+    cursor: pointer;
+}

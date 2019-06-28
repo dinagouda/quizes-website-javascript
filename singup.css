@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(236, 231, 231);
+}
+
+.mycont{
+    background-color: rgb(250, 250, 250);
+    margin-top: 60px;
+    opacity: .9;
+    box-shadow: 3px 3px 3px 3px #dfdddd;
+
+
+}
+.navbar-dark .navbar-nav .nav-link{
+    overflow: hidden;
+}
+
+.signup{
+    width: 50%;
+    background: rgb(250, 250, 250);
+    height: 60px;
+    float: left;
+    text-align: center;
+
+
+}
+#btn_signup{
+    margin-bottom: 30px;
+}
+.signin{
+   margin-right: -15px;
+    width: 50%;
+    height: 60px;
+    float: left;
+    margin: 0px;
+    text-align: center;
+    /* border: 1px solid rgb(187, 177, 177); */
+
+}
+.signup p{
+    /* line-height: 40px; */
+    color: black;
+}
+.signin a {
+    line-height: 60px;
+    color: black;
+    text-align: center;
+
+
+}
+.signin:hover{
+
+    background: transparent;
+    color: black;
+    box-shadow: 3px 3px 3px 3px  rgb(220, 218, 223);
+
+}
+h3{
+    color: black;
+    font-size:40px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.form-control{
+    /* background: transparent; */
+    margin-top: 20px;
+    font-size: 20px;
+ 
+}
+p{
+    font-size:25 px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.btn-info{
+    font-size: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+.container.signup_form{
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+
+/*navbar section*/
+.navbar{
+    font-weight: bold;
+    font-size: 15pt;
+    padding: 10px 100px;
+}
+#vl{
+    border-left: 1px solid white;
+    height: 40px;
+    margin: 5px 10px 0px 10px;
+}
+.navbar .nav-item{
+    min-width: 100px;
+    transition: background-color 2s;
+    text-align: center;
+    border: 0px;
+    border-radius: 5px;
+    margin: 0px 5px;
+    font-family: "Black Han Sans";
+}
+.navbar .nav-item:hover{
+    background-color: rgb(53, 97, 143);
+    color: rgb(31, 26, 26);
+    border: 0px;
+    border-radius: 5px;
+}
+.navbar .navbar-brand #logo{
+    width: 70px;
+    height: 70px;
+}
+.navbar .nav-item.home{
+    margin-left: 700px;
+}
+.bg-primary{
+    background-color: #298E9E !important;
+}
+
+@media only screen and (max-width: 1200px){
+    .navbar{
+        padding: 10px 40px;
+    }
+    .navbar .nav-item.home{
+        margin-left: 5px;
+    }
+    #vl{
+        display: none;
+    }
+}
+
+
+.footer{
+    color: #298E9E;
+}
+.footer hr{
+    width: 100%;
+    height: 1px;
+    background-color: #298E9E;
+}
+.footer i:not(.far){
+    font-size: 25pt;
+    margin: 0px 12px;
+    /* color: white */
+}
+.far{
+    margin: 6px 0px;
+}
+
+.copy_rights{
+    min-height: 50px;
+    /* color: white; */
+}
+.copy_rights span{
+    margin: 0px 10px;
+}
+#developed_by{
+    height: 30px;
+    border-left: 1px solid #298E9E;
+}
+
+/* 3 dots styling */
+.dropdown-toggle::after{
+    border: 0px;
+    padding-left: 3px;
+    content: "\2807";
+    font-size: 23px;
+    color: white;
+}
+.dropdown-menu{
+    top: 43px;
+    left: -88px;
+    width: 130px;
+    min-width: 0px;
+}
+
+.signup_form span{
+    margin-left: 3px;
+    display: none;
+}

@@ -1,0 +1,37 @@
+{
+    "ans": [
+    ["method", "classes", "interfaces"],
+    ["from", "to", "this"],
+    ["no differnce", "function are considered as fields", "function are values , and there is no hard distinction between methods and fields"],
+    ["object inhert prototype properties even in dynamic state", "objects inherit prototype proprties in static state", "object doesnt inhert"],
+    ["in can be innvoked as object.JSON()", "it will automatically invoked by compiler", "it will automatically invoked by JSON.stringfy() method"],
+    ["A is the superclass and B is the subclass", "B is the superclass and A is the subclass", "both A and B are the superclass"],
+    ["B= inherit (A)", "B= A.inherit()", "B.prototype=inherit(A)"],
+    ["object.defineProperty()", "object.defineProperties()", "both (a) and (b)"],
+    ["eval()", "coeval()", "equal"],
+    ["it uses bitwise checking", "it uses === and !== instead", "it uses equals () and notequals() instead"],
+
+
+    ["A parser to parse the code", "A parser that parses and adds to the subset", "A static verifier that parses code"],
+    ["to improve programmer flexibality", "to balance the workload", "to improve programmer productivity"],
+    ["Sandbox", "The Good parts", "Both (a) and (b)"],
+    ["highly memory consuming", "Functions should access the global objects", "Functions should not access the global objects"],
+    ["evaluate() and restict()", "eval() and function constractor", "debugger() and test()"],
+    ["the clint-side document object", "the server side document object", "both (a) and (b)"],
+    ["FBJS", "Caja", "ADsafe"],
+    ["ADsafe", "Caja", "dojox.secure"],
+    ["instance method ,instance field , static method, dynamic method","instance fields ,instance method,class fields ,class method", "global method ,instance field , static method, dynamic method"],
+    ["public,private ,protected", "constractor ,function , destractor", "constractor object ,prototype object,instance object"],
+
+    ["instance object", "constractor object", "prototype object"],
+    ["object properties", "variable properties", "method properties"],
+    ["RegEXpObj", "RegExpclass", "RegExp"],
+    ["Object.add(methods)", "Object.method(add)", "Object.prototype"],
+    ["HTMLElement.prototype()", "HTMLElement.prototype", "HTML.addmethods()"],
+    ["Window.reload", "location.reload", "Window.refresh"],
+    ["as a substitute of var", "as a block statment to define new variable", "all of these"],
+    ["var is paricular function", "let is confined to a particular function but var is not", "var defines values based on conditions but let does not"],
+    ["for loop", "while loop", "for/each loop"],
+    ["iterator()", "_iterator_()", "_iteration_()"]
+    ]
+}

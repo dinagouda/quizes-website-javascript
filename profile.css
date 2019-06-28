@@ -1,0 +1,163 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #ECE7E7;
+}
+.mycontiner{
+    /* margin-top: 130px; */
+}
+#name,#email,#grade {
+    color: #298E9E;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    min-height: 50px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid #298E9E;
+    border-radius: 5px;
+}
+.mycont{
+    padding: 10px;
+    margin: 10px;
+}
+.mycont i{
+    padding: 0px 5px;
+    width: 40px;
+}
+#grade{
+    margin-top: 10PX;
+}
+.mybtn{
+background-color: white;
+color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    overflow: hidden;
+}
+/* collapse styling */
+#collapsediv{
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid #298E9E;
+    border-radius: 5px;
+    color: #298E9E;
+    transition: background-color 1s, border-color 1s, color 1s;
+}
+#collapsediv:hover{
+     background-color: #298E9E;
+     border-color: white;
+     color: white;
+}
+#collapseExample{
+    border: 2px solid #298E9E;
+    border-radius: 5px;
+    color: #298E9E;
+    font-weight: 600;
+}
+.list-group-item{
+    border: 2px solid #298E9E;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+
+
+/* footer style*/
+
+.footer{
+    background-color: transparent;
+    min-height: 70px;
+    color: #298E9E;
+    position: relative;
+    bottom: -95px;
+}
+.footer hr{
+    width: 100%;
+    height: 1px;
+    background-color: #298E9E;
+}
+.footer i:not(.far){
+    font-size: 25pt;
+    margin: 0px 12px;
+    /* color: white */
+}
+.far{
+    margin: 6px 0px;
+}
+
+.copy_rights{
+    min-height: 50px;
+    color: #298E9E;
+}
+.copy_rights span{
+    margin: 0px 10px;
+}
+#developed_by{
+    height: 30px;
+    border-left: 1px solid #298E9E;
+}
+
+/* grades colors styling */
+#grades_text_ul{
+    margin: 120px 50px 0px 50px;
+    list-style: none;
+    list-style-type: none;
+}
+#grades_colors_ul{
+    margin-left: 50px;
+    margin-top: 10px;
+    list-style: none;
+    list-style-type: none;
+}
+#grades_text_ul li{
+    display: inline;
+    margin-left: 25px;
+    padding: 5px 5px;
+    font-size: 20pt;
+    font-weight: 600;
+    color: #298E9E;
+}
+#grades_text_ul #aa{
+    margin-left: 10px;
+}
+#grades_colors_ul li{
+    display: inline;
+    margin: 0px 10px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 100px;
+}
+#grades_colors_ul #col-a{
+    background-color: #2CE574;
+    border-color: #2CE574;
+    color: #2CE574;
+}
+#grades_colors_ul #col-b{
+    background-color: #CDF03A;
+    border-color: #CDF03A;
+    color: #CDF03A;
+}
+#grades_colors_ul #col-c{
+    background-color: #FFE500;
+    border-color: #FFE500;
+    color: #FFE500;
+}
+#grades_colors_ul #col-d{
+    background-color: #FF9600;
+    border-color: #FF9600;
+    color: #FF9600;
+}
+#grades_colors_ul #col-f{
+    background-color: #FF3925;
+    border-color: #FF3925;
+    color: #FF3925;
+}

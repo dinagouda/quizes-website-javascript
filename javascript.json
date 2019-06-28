@@ -1,0 +1,38 @@
+{
+    "status": [[
+        "The behaviour of the instances present of a class inside a method is defined by ",
+        " The keyword or the property that you use to refer to an object through which they were invoked is",
+        "The basic difference between JavaScript and Java is",
+        "The meaning for Augmenting classes is that:",
+        "The property of JSON() method is:",
+        "When a class B can extend another class A, we say that:",
+        "If A is the superclass and B is the subclass, then subclass inheriting the superclass can be represented as",
+        "The method that can be used to create new properties and also to modify the attributes of existing properties is",
+        "The Crockford’s subset does not include which function in JavaScript?",
+        "What does javascript use instead of == and !=?",
+
+
+        " What is being imposed on each subset to ensure that it conforms to the subset?",
+        "Why was “The Good Parts” designed as a language subset in JavaScript?",
+        " Which is the subset that is a secure container designed for the purpose of safely running untrusted JavaScript?",
+        "Why is this keyword not preferred in JavaScript?",
+        "Which are the two functions that are not allowed in any secure subset?",
+        " Which is the object that defines methods that allow complete control over page content?",
+        "Which was one of the first security subsets proposed?",
+        "Which is the subset that transforms web content into secure modules that can be safely hosted on a web page?",
+        "The four kinds of class members are",
+        " Different kinds of object involved in a class definition are",
+        
+        "The object whose properties are inherited by all instances of the class, and properties whose values are functions behaving like instance methods of the class, is",
+        "Which variables are used internally in object methods and are also globally visible?",
+        "The class that represents the regular expressions is",
+        "How can we make methods available on all objects?",
+        "What is the procedure to add methods to HTMLElement so that they will be inherited by the objects that represent the HTML tags in the current document?",
+        " You can refresh the webpage in JavaScript by using",
+        " The let keyword can be used",
+        "The main difference between the variables declared with var and with let is",
+        "Which looping statement allows XML tags to appear in JavaScript programs and adds API for operating on XML data?",
+        "which method of the iterable object returns an iterator object for the collection"
+
+]]
+}

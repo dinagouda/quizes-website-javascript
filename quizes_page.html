@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>quizes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" media="screen" href="bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="quizes.css" />
+</head>
+<body style="background-color: #CECDCD;">
+
+    <div class="container-fluid nav_fluid">
+        <div class="container">
+            <nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-primary">
+                <a class="navbar-brand" href="quizes.html"><img id="logo" src="images/quiz.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active home">
+                            <a class="nav-link" href="quizes.html">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li id="nav_quiz_btn" class="nav-item active" style="display: none">
+                            <a class="nav-link" href="quizes_page.html">Quizes<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li id="nav_login_btn" class="nav-item login active">
+                            <a class="nav-link" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="#">login<span class="sr-only">(current)</span></a>
+                        </li>
+                        <span id="vl"></span>
+                        <li id="nav_signup_btn" class="nav-item sign_up active">
+                            <a class="nav-link" href="signup.html">Sign Up<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li id="profile_btn" style="display: none" class="nav-item sign_up active">
+                            <a class="nav-link" href="profile.html"><span id="profile_name">profile</span><span class="sr-only">(current)</span></a>
+                        </li>
+                        <li id="bas" class="nav-item three_dot btn three_dot_menu dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="dropdown">
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a id="sign_out" class="dropdown-item" href="#">Sign Out</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+      
+    <div class="container-fluid cards_section" style="margin-top: 100px;background-color: #CECDCD;">
+        <div class="row px-4">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card" style="height: 500px">
+                    <p class="card_img" id="card1"></p>
+                    <div class="card-body">
+                        <h5 class="card-title">C#</h5>
+                        <p class="card-text">this is an MCQ exam measuring the basic skills of Microsoft C# language, you have 5 minutes to finish the exam.</p>
+                        <input id="c_quiz_btn_start" class="btn btn-primary start_quiz" type="button" value="Start Quiz">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card" style="height: 500px">
+                    <p class="card_img" id="card2"></p>
+                    <div class="card-body">
+                        <h5 class="card-title">HTML5</h5>
+                        <p class="card-text">this is an MCQ exam measuring the basic skills of HTML5 Markup, you have 5 minutes to finish the exam.</p>
+                        <input id="html_quiz_btn_start" class="btn btn-primary start_quiz" type="button" value="Start Quiz">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card" style="height: 500px">
+                    <p class="card_img" id="card3"></p>
+                    <div class="card-body">
+                        <h5 class="card-title">JavaScript</h5>
+                        <p class="card-text">this is an MCQ exam measuring the basic skills of JavaScript language, you have 5 minutes to finish the exam.</p>
+                        <input id="js_quiz_btn_start" class="btn btn-primary start_quiz" type="button" value="Start Quiz">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card" style="height: 500px">
+                    <p class="card_img" id="card4"></p>
+                    <div class="card-body">
+                        <h5 class="card-title">MS SQL Server</h5>
+                        <p class="card-text">this is an MCQ exam measuring the basic skills of Microsoft SQL-Server, you have 5 minutes to finish the exam.</p>
+                        <input id="sql_quiz_btn_start" class="btn btn-primary start_quiz" type="button" value="Start Quiz">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="created_quiz_row" class="row px-4">
+
+        </div>
+    </div>
+    
+
+    <div id="create_quiz_container" style="display:none">
+        <p id="create_p">Create a Quiz</p>
+        <div id="create_quiz_div">
+
+        </div>
+    </div>
+    
+
+    <!-- create quiz modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="height: 100%;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create Quiz</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="card" style="height: 500px">
+                    <p class="card_img quiz_card_img" id="card1"></p>
+                    <input id="fileItemImage" type="file" style="display: inline;">
+                    <input id="quiz_ans" class="form-control" type="text" placeholder="Enter name of Quiz answers json file">
+                    <button style="width: 150px" id="upload">Use Image</button>
+                    <div class="card-body">
+                        <input id="create_quiz_title" class="form-control" type="text" placeholder="Quiz Title, MUST be same as quiz json file name">
+                        <textarea id="create_quiz_desc" class="form-control" id="validationTextarea" placeholder="Enter Short Description"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" id="create_quiz_create_btn" class="btn btn-primary">Create Quiz</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer" style="background-color: transparent; min-height: 50px;">
+        <div class="container">
+            <hr style="background-color: #298E9E; height: 1px;">
+            <div class="row justify-content-center copy_rights" style="color: #298E9E;">
+                <i class="far fa-copyright"></i><span> all rights reserved</span> <span id="developed_by" style="border-color: #298E9E;"></span> <span>developed by our awesome team</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+    <script src="jquery-3.3.1.slim.min.js" ></script>
+    <script src="bootstrap.js" type="text/javascript"></script>
+    <script src="quizes.js" type="text/javascript"></script>
+    <script src="quizes_page.js" type="text/javascript"></script>
+</body>
+</html>
